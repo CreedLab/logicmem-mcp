@@ -252,10 +252,21 @@ See [SECURITY.md](SECURITY.md) for the full security model.
 
 ---
 
+## Documentation
+
+All documentation lives in the [`docs/`](docs/) folder right here in this repo:
+
+| Doc | What You Need |
+|-----|--------------|
+| **[📖 Start Here](docs/QUICKSTART.md)** | Install + first 10 lines of code |
+| **[🔌 MCP Protocol](docs/MCP-PROTOCOL.md)** | Full protocol reference |
+| **[🔗 A2A Sharing](docs/A2A-PROTOCOL.md)** | Agent-to-agent memory |
+| **[🔒 Security](docs/SECURITY.md)** | Encryption, CNSA 2.0, audit |
+| **[💻 Code Examples](docs/EXAMPLES.md)** | All examples in one place |
+
 ## Links
 
 - 🌐 [logicmem.io](https://logicmem.io) — Product
-- 📖 [docs.logicmem.io](https://docs.logicmem.io) — Full documentation
 - 💬 [Discord](https://discord.gg/logicmem) — Community
 - 📧 [support@logicmem.io](mailto:support@logicmem.io)
 
