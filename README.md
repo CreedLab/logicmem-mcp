@@ -39,6 +39,25 @@ and get:
 
 ---
 
+## Open Core Model
+
+This repo is the **LogicMem SDK** — the open-source client for connecting AI agents to the LogicMem memory fabric. The SDK is fully open (MIT licensed). The **reasoning engine and audit chain** run on LogicMem's private server.
+
+| | **Open Source (This Repo)** | **LogicMem Pro / Enterprise** |
+|---|---|---|
+| **SDK / Client** | ✅ Fully open (MIT) | ✅ Included |
+| **Persistent Memory** | ✅ Up to 1,000 ops/mo (free tier) | ✅ Unlimited |
+| **A2A Memory Sharing** | ✅ Basic | ✅ Advanced governance + cross-org |
+| **Reasoning Engine** | ✅ API call (server-powered) | ✅ Deep / Exhaustive modes |
+| **Audit Trail** | ✅ API call (server-verified) | ✅ Tamper-evident ledger + CNSA 2.0 |
+| **Voice Agent Memory** | ✅ | ✅ |
+| **Deployment** | Cloud (logicmem.io) | Cloud, on-prem, or air-gap |
+| **Support** | Community | Dedicated + SLA |
+
+**Why this model?** The SDK gives developers the steering wheel. The LogicMem server is the engine. You get a great developer experience — and your AI gets production-grade memory infrastructure without building it yourself.
+
+---
+
 ## Install
 
 ```bash
@@ -178,7 +197,7 @@ print(f"Correction pairs ready: {stats['ready_count']}")
                              ▼
 ┌──────────────────────────────────────────────────────────────┐
 │                   LogicMem MCP Server                        │
-│                 mcp.logicmem.io:8423                         │
+│                 api.logicmem.io                              │
 │  ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────┐ │
 │  │   Memory    │ │  Reasoning │ │    A2A     │ │ Audit  │ │
 │  │   Tools     │ │   Engine   │ │   Relay    │ │ Chain  │ │
@@ -200,7 +219,7 @@ print(f"Correction pairs ready: {stats['ready_count']}")
 
 The server accepts JSON-RPC 2.0 requests over HTTPS.
 
-**Base URL:** `https://mcp.logicmem.io`
+**Base URL:** `https://api.logicmem.io`
 
 **Authentication:** `Authorization: Bearer <api_key>` header.
 
