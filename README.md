@@ -3,8 +3,7 @@
 > **Persistent memory, A2A sharing, reasoning engine, and immutable audit trail
 > for AI agents via the Model Context Protocol.**
 
-[![PyPI Version](https://img.shields.io/pypi/v/logicmem)](https://pypi.org/project/logicmem/)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue)](https://pypi.org/project/logicmem/)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blueviolet)](https://modelcontextprotocol.io)
 
@@ -61,10 +60,12 @@ This repo is the **LogicMem SDK** — the open-source client for connecting AI a
 ## Install
 
 ```bash
+# macOS: add --break-system-packages (Homebrew Python requires it)
+pip install --break-system-packages git+https://github.com/LogicMem/LogicMem-mcp-.git
+
+# Linux/Ubuntu (no flag needed):
 pip install git+https://github.com/LogicMem/LogicMem-mcp-.git
 ```
-
-> 📦 **PyPI release coming soon.** For now, install directly from GitHub.
 
 ---
 
@@ -75,6 +76,8 @@ pip install git+https://github.com/LogicMem/LogicMem-mcp-.git
 Sign up at **[logicmem.io](https://logicmem.io)** → Settings → API Keys → Create Key.
 
 Free tier: **1,000 memory operations/month**.
+
+> ⚠️ **macOS users:** If you see a `PEP 668` error during install, rerun with `--break-system-packages` flag (see Install section above).
 
 ### 2. Use the Python SDK
 
