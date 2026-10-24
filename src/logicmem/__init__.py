@@ -2,7 +2,7 @@
 LogicMem — AI Agent Memory Infrastructure
 =========================================
 
-Persistent memory, A2A sharing, reasoning engine, and immutable audit trail
+Persistent memory, A2A sharing, reasoning engine, and tamper-evident audit trail
 for AI agents via the Model Context Protocol.
 
 Usage:
